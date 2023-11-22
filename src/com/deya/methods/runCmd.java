@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * @description
  */
 public class runCmd {
-    private static void runCmd(String filePath) {
+    public static void runCmd(String filePath) {
 
         BufferedReader bufferedReader = null;
         try {

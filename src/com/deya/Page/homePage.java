@@ -1,6 +1,9 @@
 package com.deya.Page;
 
+import com.deya.methods.runCmd;
+
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,10 +20,16 @@ public class homePage extends JFrame{
     private JPanel jpl;
 
     public homePage() {
+        btn1.setSize(200,200);
+        btn2.setSize(200,200);
+        btn3.setSize(200,200);
+
+
+
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("射线追踪");
+                runCmd.runCmd("D:\\项目\\打工\\国科大\\长沙项目联调\\长沙项目联调\\射线追踪\\raytracing.exe");
 
             }
         });
